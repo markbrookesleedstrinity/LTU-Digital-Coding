@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading List</title>
+</head>
+<body>
+   
+<script>
+
+    // Reading List
+    // Keep track of books I have read
+    // Show book title and author of each book
+    // If read, show message 'You have already read BOOK TITLE by AUTHOR'
+    // If unread, show message 'You have not read BOOK TITLE by AUTHOR'
+
+
+    // 1. Create list of books ARRAY of OBJECTS
+    // 2. Cycle through list of book FOR LOOP
+    // 3. Show read or not
+
+    let books = [
+    {
+        title: 'Lord of the Rings', 
+        author: 'J.R.R. Tolkien',
+        hasRead: false
+    }, 
+    {
+        title: 'Dune',
+        author: 'Frank Herbert',
+        hasRead: true
+    }
+    ];
+
+    for( let index = 0; index < books.length; index++ ){
+        
+        if ( books[index].hasRead ) {
+            console.log('You have read ' + books[index].title);
+        } else {
+            console.log('You have not read ' + books[index].title);
+        }
+
+
+
+
+        console.log( books[index].hasRead );
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>
